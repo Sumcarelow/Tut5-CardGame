@@ -29,3 +29,13 @@ void Card::setNewCardNo(int n) {
 void Card::setNewCardColor(string color) {
 	newCardColor = color;
 }
+int Card::Error(int number, string color) {
+
+	if (number < 1 || number > 10 || color != "red" || color != "black")
+		return 1;
+	else
+		return 2;
+
+	}
+
+

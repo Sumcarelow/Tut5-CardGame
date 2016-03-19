@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-	int CardNumber;
+	int CardNumber, error;
 	string CardColor;
 
 	cout << "Please enter the card number:" << endl;
@@ -16,8 +16,14 @@ int main() {
 	cin >> CardColor;
 
 	Card card1(CardNumber, CardColor);
+	error = card1.Error(CardNumber, CardColor);
+	if (error == 1){
+		cout << "There card is invalid please re enter" << endl;
 
-	cout << "the card number is:" << endl << card1.getNewCardNo() << endl;
+	}
+	else if (error == 2)
+		cout << "the card is valid" << endl;
+
 
 	system("pause");
 	return 0;

@@ -27,6 +27,9 @@ public:
 	void setNewCardNo(int);
 	void setNewCardColor(string);
 
+	//Other Functions
+	int Error(int, string);
 };
+
 
 #endif
