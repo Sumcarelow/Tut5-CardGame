@@ -31,7 +31,7 @@ void Card::setNewCardColor(string color) {
 }
 int Card::Error(int number, string color) {
 
-	if (number <= 0 || number >= 11 || color != "red" || color != "black")
+	if (number <= 0 || number >= 11 || color != "red" && color != "black")
 		return 1;
 	else if (number <= 10 || number >= 1 || color == "red" || color == "black")
 		return 2;
@@ -39,7 +39,7 @@ int Card::Error(int number, string color) {
 	}
 
 void Card::print(){
-	cout << "The colour is:" << endl << newCardColor << "The card number is:" <<newCardNo<< endl;
+	cout << "The colour is:" << newCardColor <<endl<< "The card number is:" <<newCardNo<< endl;
 }
 
 

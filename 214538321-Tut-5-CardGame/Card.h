@@ -32,5 +32,25 @@ public:
 	void print();
 };
 
+class DeckOfCards{
+private:
+	Card *Deck[19];
+	Card CardDeck[19];
+
+public:
+	//Constructor and Destructor
+	DeckOfCards();
+	~DeckOfCards();
+
+	//Overload Constructor
+	DeckOfCards(Card *a[]);
+
+	//Mutator Function
+	void setNewDeck(int number);
+
+
+
+};
+
 
 #endif
