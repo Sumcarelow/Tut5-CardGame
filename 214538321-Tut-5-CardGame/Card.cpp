@@ -13,12 +13,12 @@ Card::Card(int a, string b){
 	newCardColor = b;
 }
 
-int Card::getNewCardNo() const{
+int Card::number() const{
 	return newCardNo;
 
 }
 
-string Card::getNewCardColor() const{
+string Card::colour() const{
 	return newCardColor;
 }
 
@@ -31,11 +31,15 @@ void Card::setNewCardColor(string color) {
 }
 int Card::Error(int number, string color) {
 
-	if (number < 1 || number > 10 || color != "red" || color != "black")
+	if (number <= 0 || number >= 11 || color != "red" || color != "black")
 		return 1;
-	else
+	else if (number <= 10 || number >= 1 || color == "red" || color == "black")
 		return 2;
 
 	}
+
+void Card::print(){
+	cout << "The colour is:" << endl << newCardColor << "The card number is:" <<newCardNo<< endl;
+}
 
 

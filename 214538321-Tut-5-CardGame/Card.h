@@ -20,8 +20,8 @@ public:
 	Card(int, string);
 
 	//Accessor Functions
-	string getNewCardColor() const;
-	int getNewCardNo() const;
+	string colour() const;
+	int number() const;
 
 	//Mutator Functions
 	void setNewCardNo(int);
@@ -29,6 +29,7 @@ public:
 
 	//Other Functions
 	int Error(int, string);
+	void print();
 };
 
 
