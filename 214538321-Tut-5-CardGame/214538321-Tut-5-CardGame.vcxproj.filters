@@ -24,8 +24,10 @@
     <ClCompile Include="DeckOfCards.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Card.h">
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Card.h">
       <Filter>Header Files</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -17,7 +17,7 @@ int main() {
 
 	Card card1(CardNumber, CardColor);
 
-	cout << "the card number is:" << card1.getNewCardColor() << endl;
+	cout << "the card number is:" << endl << card1.getNewCardNo() << endl;
 
 	system("pause");
 	return 0;
